@@ -7,8 +7,8 @@ import ActionContainer from "../container/action/ActionContainer";
 class Box extends React.Component{
     render() {
         return (
-             <div>
-                <div>
+             <div className="boxed--view">
+                <div className="boxed--viev__box">
                     <ListContainer/>
                     <ActionContainer />
                 </div>
