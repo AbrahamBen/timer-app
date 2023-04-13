@@ -3,7 +3,7 @@ import React from "react";
 class TimerForm extends React.Component{
 
     render() {
-        const submitText =this.props.title ? 'Modifier':'Créer;'
+        const submitText =this.props.title ? 'Modifier':'Créer';
         return (
             <div className="form">
                 <div className="form--content">
@@ -18,10 +18,10 @@ class TimerForm extends React.Component{
                     </div>
 
                     <div className="form--button">
-                        <button className="btn--submit">
+                        <button className="button btn--submit">
                             {submitText}
                         </button>
-                        <button className="btn--cancel">
+                        <button className="button btn--cancel">
                             Annuler
                         </button>
                     </div>

@@ -1,9 +1,13 @@
 import React from "react";
+import Container from "../Container";
 
 class ListContainer extends React.Component{
     render(){
         return(
-            <div>Hello from List</div>
+            <div className="list--container">
+                <Container isFormOpen={false} />
+                <Container isFormOpen />
+            </div>
         );
     }
 }
