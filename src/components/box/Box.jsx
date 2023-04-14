@@ -10,9 +10,7 @@ class Box extends React.Component{
              <div className="boxed--view">
                 <div className="boxed--viev__box">
                     <ListContainer/>
-                    <ActionContainer 
-                        isFormOpen={false}
-                    />
+                    <ActionContainer />
                 </div>
              </div>
         );

@@ -3,9 +3,13 @@ import TimerForm from "../../timer-form/TimerForm";
 import Button from "../../button/Button";
 
 class ActionContainer extends React.Component{
+
+    state={
+        isFormOpen:false
+    }
     render(){
 
-        if (this.props.isFormOpen) {
+        if (this.state.isFormOpen) {
             return (<TimerForm />)
         }else{
            return (<Button />)

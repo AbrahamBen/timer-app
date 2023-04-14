@@ -6,6 +6,10 @@ import Timer from "../timer/Timer";
 //2. Create component
 class Container extends React.Component{
 
+    state ={
+        isFormOpen:false
+    }
+
     render() {
         return (
              <div className="list--container">
