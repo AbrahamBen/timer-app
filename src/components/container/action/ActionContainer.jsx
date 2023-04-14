@@ -4,15 +4,12 @@ import Button from "../../button/Button";
 
 class ActionContainer extends React.Component{
     render(){
-        return(
-            <div>
-                {
-                    this.props.isFormOpen ?
-                    (<TimerForm />) :
-                    (<Button />)
-                }
-            </div>
-        );
+
+        if (this.props.isFormOpen) {
+            return (<TimerForm />)
+        }else{
+           return (<Button />)
+        }
     }
 }
 
